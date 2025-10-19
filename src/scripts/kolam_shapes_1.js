@@ -1,7 +1,7 @@
 import { drawTiltedSquare, drawPartialCircle } from "./raw_shapes";
 
-export default {
-  shape0: (ctx, x, y, size) => {
+export default [
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -11,7 +11,7 @@ export default {
       },
     });
   },
-  shape1: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -28,7 +28,7 @@ export default {
       cut: "X",
     });
   },
-  shape2: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -45,7 +45,7 @@ export default {
       cut: "X",
     });
   },
-  shape3: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -61,7 +61,7 @@ export default {
       cut: "X",
     });
   },
-  shape4: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -78,7 +78,7 @@ export default {
       cut: "X",
     });
   },
-  shape5: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -110,7 +110,7 @@ export default {
       cut: "X",
     });
   },
-  shape6: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -126,7 +126,7 @@ export default {
       cut: "X",
     });
   },
-  shape7: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -141,7 +141,7 @@ export default {
       cut: "X",
     });
   },
-  shape8: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -158,7 +158,7 @@ export default {
       cut: "X",
     });
   },
-  shape9: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         bottomRight: true,
@@ -174,7 +174,7 @@ export default {
       cut: "X",
     });
   },
-  shapeA: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -201,7 +201,7 @@ export default {
       cut: "X",
     });
   },
-  shapeB: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topRight: true,
@@ -216,7 +216,7 @@ export default {
       cut: "X",
     });
   },
-  shapeC: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         topLeft: true,
@@ -232,7 +232,7 @@ export default {
       cut: "X",
     });
   },
-  shapeD: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         bottomLeft: true,
@@ -247,7 +247,7 @@ export default {
       cut: "X",
     });
   },
-  shapeE: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawTiltedSquare(ctx, x, y, size, {
       sides: {
         bottomLeft: true,
@@ -262,11 +262,11 @@ export default {
       cut: "X",
     });
   },
-  shapeF: (ctx, x, y, size) => {
+  (ctx, x, y, size) => {
     drawPartialCircle(ctx, x, y, size / 2, {
       start: 0,
       end: 1,
       cut: "X",
     });
   },
-};
+];

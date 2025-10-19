@@ -171,15 +171,16 @@ export function drawTiltedSquare(ctx, x, y, size, options = {}) {
     ctx.moveTo(a.x + dx * startFrac, a.y + dy * startFrac);
     ctx.lineTo(a.x + dx * endFrac, a.y + dy * endFrac);
   }
-
   ctx.stroke();
 }
 
-export function drawDot(ctx, x, y, size = 3) {
+export function drawDot(ctx, x, y, size = 3, color = 'white') {
+  ctx.fillStyle = color; 
   ctx.beginPath();
   ctx.arc(x, y, size, 0, Math.PI * 2, false); // Draw a full circle
   ctx.fill();
   ctx.closePath();
+  ctx.fillStyle = 'white';
 }
 
 // -----

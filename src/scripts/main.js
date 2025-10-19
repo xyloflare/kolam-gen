@@ -15,14 +15,23 @@ window.addEventListener("load", () => {
   
   //tiltCanvas(ctx)
 
-  drawDot(ctx, 0, 0, 20);
-  drawDot(ctx, 0, size, 20);
-  drawDot(ctx, size, size, 20);
-  drawDot(ctx, size, 0, 20);
-  drawDot(ctx, size / 2, size / 2, 10);
+  //drawDot(ctx, 0, 0, 10)
+  //drawDot(ctx, 0, size, 10);
+  //drawDot(ctx, size, size, 10);
+  //drawDot(ctx, size, 0, 10);
+  //drawDot(ctx, size / 2, size / 2, 6, 'red');
+  //kolam_shapes_1[0x0](ctx, 0, 0, 30)
+  //kolam_shapes_1[0x0](ctx, size, 0, 30)
+  //kolam_shapes_1[0x0](ctx, 0, size, 30)
+  //kolam_shapes_1[0x0](ctx, size, size, 30)
+  //kolam_shapes_1[0x0](ctx, size/2, size/2, 30)
+
+  //undoTiltCanvas(ctx)
   
-  renderKolam();
+  renderKolam(ctx, size);
+  console.log(size)
 });
+
 
 const tiltCanvas = (ctx) => {
   ctx.setTransform(1, 0, 0, 1, 0, 0);

@@ -1,0 +1,30 @@
+
+
+function generateRandomString(length) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+const randomString = generateRandomString(10); // Generates a 10-character random string
+console.log(randomString);
+function stringToBinary(inputString) {
+  return inputString
+    .split('') // Split the string into an array of individual characters
+    .map(function(char) {
+      // Get the character code (Unicode) of each character
+      const charCode = char.charCodeAt(0);
+      // Convert the character code to its binary string representation
+      // padStart(8, '0') ensures each binary representation is 8 bits long,
+      // adding leading zeros if necessary.
+      return charCode.toString(2).padStart(8, '0');
+    })
+    .join(''); // Join the binary representations with spaces for readability
+}
+let rtmp = (Math.floor(Math.random() * (15 - 0 + 1)) + 0).toString(2).padStart(4, '0');
+console.log(rtmp)
+
+console.log(stringToBinary(randomString))
