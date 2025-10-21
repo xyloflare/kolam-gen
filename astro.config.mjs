@@ -12,5 +12,6 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    server: {allowedHosts: 'ohio-example.gl.at.ply.gg'}
   },
 });
