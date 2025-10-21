@@ -1,3 +1,13 @@
-<div class="sticky top-0 m-2 py-2 px-8 border-white border-2 rounded-3xl md:w-3xl w-[95%] text-center backdrop-blur-2xl shadow-sm shadow-sky-100">
-  <h1 class="text-3xl font-bold">Kolam Generator</h1>
-</div>
+---
+import { Item } from "@/components/ui/item";
+import ToggleTheme from "./ToggleTheme";
+---
+
+<Item variant={"outline"} className="">
+  <h1 class="text-3xl m-plus-rounded-1c font-extrabold tracking-wider">
+    Kolam Generator
+  </h1>
+  <div class="ml-auto">
+    <ToggleTheme client:load />
+  </div>
+</Item>

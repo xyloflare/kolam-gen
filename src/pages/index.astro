@@ -1,9 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Titlebar from '@/components/Titlebar.astro';
-import Canvas from '@/components/Canvas.astro';
+import Layout from "../layouts/Layout.astro";
+import Titlebar from "@/components/Titlebar.astro";
+import Canvas from "@/components/Canvas.astro";
+//import { Separator } from '@/components/ui/separator';
+import { ItemGroup, Item } from "@/components/ui/item";
+import Controls from "@/components/Controls";
+import { Button } from "@/components/ui/button";
 ---
 <Layout>
-  <Titlebar/>
-  <Canvas/>
+  <div class="h-full flex justify-center items-center w-full my-2 ">
+    <div
+      class="flex flex-col lg:flex-row content-stretch items-stretch gap-6 lg:w-full justify-center mx-3"
+    >
+      <ItemGroup className="gap-6 shrink-0">
+        <Titlebar />
+        <Canvas />
+      </ItemGroup>
+      <ItemGroup className="grow md:min-w-72 lg:max-w-md overflow-auto w-full gap-6 flex-col-reverse lg:flex-col">
+        <Item variant={"outline"} className="h-full">
+          <Controls client:load />
+        </Item>
+        <Button className="b g-indigo-600 hove r:b g-indigo-700">Generate</Button>
+      </ItemGroup>
+    </div>
+  </div>
 </Layout>
